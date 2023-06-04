@@ -4,7 +4,7 @@
 Marko Popovic <br />
 Dejan Aksovic <br />
 Anastasija Mijaljevic <br />
-Mehmed Kucevicgi <br />
+Mehmed Kucevic <br />
 
 ### Functionalities
 Death stat display <br>
