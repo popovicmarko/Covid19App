@@ -6,7 +6,7 @@ Dejan Aksovic <br />
 Anastasija Mijaljevic <br />
 Mehmed Kucevic<br />
 
-### Functionalities
+## Functionalities
 Death stat display <br>
 Covid positive stat <br>
 Respirator stat <br>
