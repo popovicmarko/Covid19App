@@ -14,7 +14,8 @@
     height: 90vh;
     background-image: url("https://www.brookings.edu/wp-content/uploads/2020/03/shutterstock_1647268288.jpg");
     background-size: 100%;
-}
+    background-repeat: no-repeat;
+    }
 .statisticCoi{
     border: 1px solid #000;
     border-radius: 1rem;
