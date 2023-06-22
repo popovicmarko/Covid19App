@@ -1,14 +1,18 @@
 import './App.css'
 import NavBar from './components/NavBar/NavBar'
-import React from 'react'
 import Statistic from './components/Statistic/Statistic'
+
+//KONTEKSTI
+import CasesContextProvider from './context/casesContext'
 
 function App() {
 
   return (
     <>
-      <NavBar />
-      <Statistic />
+      <CasesContextProvider>
+        <NavBar />
+        <Statistic />
+      </CasesContextProvider>
     </>
   )
 }
