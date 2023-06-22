@@ -21,6 +21,7 @@
     padding: 30px;
     color: #fff;
     opacity: .8;
+    width: 200px;
 }
 .infeced{
     background-color: red;
