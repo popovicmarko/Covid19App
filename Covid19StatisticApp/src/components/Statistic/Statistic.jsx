@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import "./Statistic.css";
 
 const data = [{
-  infected,
-  cured,
-  died
+  infected:1,
+  cured:2,
+  died:3
 }]
 function Statistic() {
   return (
