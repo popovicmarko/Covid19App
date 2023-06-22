@@ -1,23 +1,23 @@
 import React, { useState } from "react";
 import "./Statistic.css";
 
-const data = [{
-  infected,
-  cured,
-  died
-}]
+
 function Statistic() {
+  const data = [{
+    infected: 5,
+    cured: 5,
+    died: 5
+  }]
   return (
     <div className="Statistic">
-      <div className="statisticCoi">
-        <span className="info">infected</span>
+      <div className="statisticCoi infeced">
+        <span className="info">INFECED: {data[0].infected}</span>
       </div>
-      <div className="statisticCoi">
-        <span className="info">cured</span>
-
+      <div className="statisticCoi recovered">
+        <span className="info">CVURED: {data[0].cured}</span>
       </div>
-      <div className="statisticCoi">
-        <span className="info">died</span>
+      <div className="statisticCoi died">
+        <span className="info">DIED: {data[0].died}</span>
       </div>
     </div>
   );

@@ -1,14 +1,12 @@
 import './App.css'
-import NavBar from './components/NavBar/NavBar'
 import React from 'react'
-import Statistic from './components/Statistic/Statistic'
+import Home from './pages/Home/Home'
 
 function App() {
 
   return (
     <>
-      <NavBar />
-      <Statistic />
+      <Home />
     </>
   )
 }
