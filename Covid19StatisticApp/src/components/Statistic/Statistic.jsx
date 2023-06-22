@@ -3,6 +3,7 @@ import "./Statistic.css";
 import { useGetAllCases } from "../../hooks/useGetAllCases";
 import { useCases } from "../../hooks/useCases";
 
+
 function Statistic() {
   const { cases } = useCases()
 
