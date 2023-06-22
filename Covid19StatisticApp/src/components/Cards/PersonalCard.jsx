@@ -14,9 +14,6 @@ function PersonalCard ({
 })
 
 {
-    useEffect(()=> {
-        console.log(persons)
-    }, [])
     return (
       <div className="container">
         <div className="card">

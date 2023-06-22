@@ -2,7 +2,7 @@ import { BrowserRouter, Route, RouterProvider, createBrowserRouter, createRoutes
 import './App.css'
 
 import Statistic from './components/Statistic/Statistic'
-import PersonalCard from './components/Cards/PersonalCard'
+import Team from './pages/Team/Team'
 
 
 
@@ -15,7 +15,9 @@ function App() {
     <Route>
       {/* Samo copy past putanju i elemenet ubacite koji hocete, putanja tipa [/team] */}
       <Route path='/' element = {<Statistic/>}/>
-      {/* <Route path='/team' element = {}/> */}
+
+      <Route path='/team' element = {<Team />}/>
+
     </Route>
   ))
 
@@ -25,6 +27,7 @@ function App() {
       <CasesContextProvider>
         <RouterProvider router={router}/>
       </CasesContextProvider>
+      
     
     </>
   )
