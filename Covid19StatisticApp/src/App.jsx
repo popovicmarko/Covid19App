@@ -1,12 +1,14 @@
 import './App.css'
 import NavBar from './components/NavBar/NavBar'
+import React from 'react'
+import Statistic from './components/Statistic/Statistic'
 
 function App() {
 
   return (
     <>
       <NavBar />
-      <h1>Radimo!</h1>
+      <Statistic />
     </>
   )
 }
