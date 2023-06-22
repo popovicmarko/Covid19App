@@ -2,6 +2,9 @@ import { BrowserRouter, Route, RouterProvider, createBrowserRouter, createRoutes
 import './App.css'
 
 import Statistic from './components/Statistic/Statistic'
+import PersonalCard from './components/Cards/PersonalCard'
+
+
 
 //KONTEKSTI
 import CasesContextProvider from './context/casesContext'
@@ -18,9 +21,11 @@ function App() {
 
   return (
     <>
+
       <CasesContextProvider>
         <RouterProvider router={router}/>
       </CasesContextProvider>
+    
     </>
   )
 }

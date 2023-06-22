@@ -4,6 +4,7 @@ import { useGetAllCases } from "../../hooks/useGetAllCases";
 import { useCases } from "../../hooks/useCases";
 import NavBar from "../NavBar/NavBar";
 
+
 function Statistic() {
   const { cases } = useCases()
 
