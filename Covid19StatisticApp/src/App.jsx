@@ -15,7 +15,9 @@ function App() {
     <Route>
       {/* Samo copy past putanju i elemenet ubacite koji hocete, putanja tipa [/team] */}
       <Route path='/' element = {<Statistic/>}/>
+
       <Route path='/team' element = {<Team />}/>
+
     </Route>
   ))
 
