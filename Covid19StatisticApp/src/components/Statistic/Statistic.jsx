@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Statistic.css";
 
-
 function Statistic() {
   const data = [{
     infected: 5,

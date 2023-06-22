@@ -1,12 +1,19 @@
 import './App.css'
-import React from 'react'
-import Home from './pages/Home/Home'
+
+import NavBar from './components/NavBar/NavBar'
+import Statistic from './components/Statistic/Statistic'
+
+//KONTEKSTI
+import CasesContextProvider from './context/casesContext'
 
 function App() {
 
   return (
     <>
-      <Home />
+      <CasesContextProvider>
+        <NavBar />
+        <Statistic />
+      </CasesContextProvider>
     </>
   )
 }
