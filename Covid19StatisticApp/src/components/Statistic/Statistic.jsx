@@ -1,23 +1,27 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Statistic.css";
-
+import { useGetAllCases } from "../../hooks/useGetAllCases";
+import { useCases } from "../../hooks/useCases";
 
 function Statistic() {
-  const data = [{
-    infected: 5,
-    cured: 5,
-    died: 5
-  }]
+  const { cases } = useCases()
+
+  const { getAllCases } = useGetAllCases()
+
+  useEffect( () => {
+    getAllCases()
+  }, [] )
+
   return (
     <div className="Statistic">
       <div className="statisticCoi infeced">
-        <span className="info">INFECED: {data[0].infected}</span>
+        <span className="info">INFECED: {cases && cases.active}</span>
       </div>
       <div className="statisticCoi recovered">
-        <span className="info">CVURED: {data[0].cured}</span>
+        <span className="info">CVURED: {cases && cases.recovered}</span>
       </div>
       <div className="statisticCoi died">
-        <span className="info">DIED: {data[0].died}</span>
+        <span className="info">DIED: {cases && cases.deaths}</span>
       </div>
     </div>
   );
