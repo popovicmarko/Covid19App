@@ -30,7 +30,7 @@ function PersonalCard ({
                 <p>{description}</p>
             </div>
             <div className="gitAcc">
-                <GitHubIcon />
+            <GitHubIcon sx={{width:35,height:35,color:" #3f2438",}} />
                 <a href={gitHubLink}></a>
             </div>
         </div>

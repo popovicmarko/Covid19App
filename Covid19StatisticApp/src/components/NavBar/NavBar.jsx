@@ -1,14 +1,26 @@
 import React from "react";
 import "./NavBar.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function NavBar() {
+  const location = useLocation();
 
   return (
     <div className="NavBar">
-      <Link className="nav" to = '/'>STATISTIC</Link>
-      <Link className="nav" to="/team">TEAM</Link>
+      <Link
+        className={`nav ${location.pathname === "/" ? "active" : ""}`}
+        to="/"
+      >
+        STATISTIC
+      </Link>
+      <Link
+        className={`nav ${location.pathname === "/team" ? "active" : ""}`}
+        to="/team"
+      >
+        TEAM
+      </Link>
     </div>
-  )
+  );
 }
+
 export default NavBar;
