@@ -19,10 +19,10 @@ function Statistic() {
     <NavBar/>
     <div className="Statistic">
       <div className="statisticCoi infeced">
-        <span className="info">INFECED: {cases && cases.active}</span>
+        <span className="info">INFECTED: {cases && cases.active}</span>
       </div>
       <div className="statisticCoi recovered">
-        <span className="info">CVURED: {cases && cases.recovered}</span>
+        <span className="info">CURED: {cases && cases.recovered}</span>
       </div>
       <div className="statisticCoi died">
         <span className="info">DIED: {cases && cases.deaths}</span>
